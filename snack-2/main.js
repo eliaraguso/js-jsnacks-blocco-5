@@ -61,6 +61,8 @@ let minoriUguali15 = [];
 let over15 = [];
 
 
+let pesoTotaleCorte = 0;
+let pesoTotaleLunghe = 0;
 
 
 
@@ -69,19 +71,24 @@ for (let i = 0; i < zucchine.length; i++) {
     if (zucchine[i]["lunghezza"] <= 15) {
         
         minoriUguali15.push(zucchine[i]["varieta"]);
+        pesoTotaleCorte += zucchine[i]["peso"]
 
     } else if (zucchine[i]["lunghezza"] > 15) {
 
         over15.push(zucchine[i]["varieta"]);
+        pesoTotaleLunghe += zucchine[i]["peso"]
+
 
     } 
     
 }
 
-console.log(minoriUguali15);
 
-console.log(over15);
 
-alert("Le zucchine minori o uguali a 15 cm sono: " + minoriUguali15);
-alert("Le zucchine maggiori di 15 cm sono: " + over15);
+
+
+
+
+alert("Le zucchine minori o uguali a 15 cm sono: " + minoriUguali15 + " " + "e il loro peso totale è:" + " " + pesoTotaleCorte + " " + "grammi");
+alert("Le zucchine maggiori di 15 cm sono: " + over15 + " " + "e il loro peso totale è:" + " " + pesoTotaleLunghe + " " + "grammi");
 
