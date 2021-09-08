@@ -60,7 +60,7 @@ let pesoTotale = 0;
 
     for (let i = 0; i < zucchine.length; i++) {
         
-        pesoTotale = zucchine[i]["peso"];
+        pesoTotale += zucchine[i]["peso"];
         
     };
 
