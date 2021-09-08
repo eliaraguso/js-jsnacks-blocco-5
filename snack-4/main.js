@@ -21,3 +21,6 @@ function myFunction (arr1, arr2) {
 let risultato = myFunction(array1, array2);
 
 console.log(risultato);
+
+alert("gli array di partenza sono:" + " " + array1 + " " + "e" + " " + array2);
+alert("guarda come ti unisco gli array:" + " " + risultato);
