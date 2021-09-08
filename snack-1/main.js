@@ -62,6 +62,6 @@ let pesoTotale = 0;
         
         pesoTotale += zucchine[i]["peso"];
         
-    };
+    }
 
 console.log(pesoTotale);
